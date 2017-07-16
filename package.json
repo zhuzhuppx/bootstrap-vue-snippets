@@ -1,11 +1,10 @@
 {
   "name": "bootstrap-vue-snippets",
-  "version": "0.3.0",
+  "version": "0.0.0",
   "description": "snippets for https://bootstrap-vue.js.org/",
   "author": {
     "name": "siyuan.zhu",
-    "email": "zhusiyuanhao@163.com",
-    "url": "https://github.com/zhuzhuppx"
+    "email": "zhusiyuanhao@163.com"
   },
   "keywords": [
     "bootstrap-vue-snippets",
