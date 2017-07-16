@@ -2,9 +2,15 @@
   "name": "bootstrap-vue-snippets",
   "version": "0.0.0",
   "description": "snippets for https://bootstrap-vue.js.org/",
+  "author": {
+    "name": "siyuan.zhu",
+    "email": "zhusiyuanhao@163.com",
+    "url": "https://github.com/zhuzhuppx"
+  },
   "keywords": [
+    "bootstrap-vue-snippets","Bootstrap","bootstrap-vue","vue-bootstrap"
   ],
-  "repository": "https://github.com/atom/bootstrap-vue-snippets",
+  "repository": "https://github.com/zhuzhuppx/bootstrap-vue-snippets.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
