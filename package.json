@@ -1,0 +1,14 @@
+{
+  "name": "bootstrap-vue-snippets",
+  "version": "0.0.0",
+  "description": "snippets for https://bootstrap-vue.js.org/",
+  "keywords": [
+  ],
+  "repository": "https://github.com/atom/bootstrap-vue-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

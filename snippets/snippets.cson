@@ -1,0 +1,497 @@
+'.text.html.vue':
+  'bAlert':
+    'prefix': 'b-alert'
+    'body': """
+            <b-alert variant="info" show>
+                //TODO
+            </b-alert>
+            """
+  'bBreadcrumb':
+    'prefix': 'b-breadcrumb'
+    'body': """
+             <b-breadcrumb :items="items" :aria-current="item"/>
+            """
+  'bButton':
+    'prefix': 'b-button'
+    'body': """
+            <b-button  variant="primary" href="">
+                submit
+            </b-button>
+            """
+  'bButtonToolbar':
+    'prefix': 'b-button-toolbar'
+    'body': """
+               <b-button-toolbar aria-label="Toolbar with button groups and input groups">
+              <b-button-group size="sm" class="mx-1">
+                <b-btn>New</b-btn>
+                <b-btn>Edit</b-btn>
+              </b-button-group>
+              <b-input-group size="sm" class="w-25 mx-1" left="$" right=".00">
+                <b-form-input value="123" class="text-right"></b-form-input>
+              </b-input-group>
+              <b-input-group  size="sm" class="w-25 mx-1" left="Size">
+                <b-form-select value="Medium" :options="['Large','Medium','Small']"></b-form-select>
+              </b-input-group>
+                <b-button-group  size="sm" class="mx-1">
+                <b-btn>Save</b-btn>
+                <b-btn>Cancel</b-btn>
+              </b-button-group>
+            </b-button-toolbar>
+              """
+  'bButtonGroup':
+    'prefix': 'b-button-group'
+    'body': """
+              <b-button-group >
+              <b-button>Left</b-button>
+              <b-button>Middle</b-button>
+              <b-button>Right</b-button>
+            </b-button-group>
+              """
+  'bInputGroup':
+    'prefix': 'b-input-group'
+    'body': """
+              <b-input-group left="Username">
+              <b-form-input></b-form-input>
+              <!-- Attach Right button -->
+              <b-input-group-button slot="right">
+                <b-dropdown text="Dropdown" variant="success" right>
+                  <b-dropdown-item>Action</b-dropdown-item>
+                  <b-dropdown-item>Action</b-dropdown-item>
+                </b-dropdown>
+              </b-input-group-button>
+            </b-input-group>
+              """
+  'bInputGroupAddon':
+    'prefix': 'b-input-group-addon'
+    'body': """
+            <b-input-group-addon>
+            </b-input-group-addon>
+            """
+  'bInputGroupButton':
+    'prefix': 'b-input-group-button'
+    'body': """
+             <b-input-group-button slot="right">
+              <b-dropdown text="Dropdown" variant="success" right>
+                <b-dropdown-item>Action</b-dropdown-item>
+                <b-dropdown-item>Action</b-dropdown-item>
+              </b-dropdown>
+            </b-input-group-button>
+            """
+  'bCard':
+    'prefix': 'b-card'
+    'body': """
+               <b-card overlay
+                    img="http://placeskull.com/200/200/E8117F/-1/0"
+                    class="mb-2"
+            >
+               Overlay cards are cute!
+            </b-card>
+              """
+  'bCardGroup':
+    'prefix': 'b-card-group'
+    'body': """
+            <b-card-group>
+            </b-card-group>
+            """
+  'bDropdown':
+    'prefix': 'b-dropdown'
+    'body': """
+               <b-dropdown text="Dropdown Button sm" class="m-md-2">
+              <b-dropdown-header>This is a heading</b-dropdown-header>
+              <b-dropdown-item>Action</b-dropdown-item>
+              <b-dropdown-item>Another action</b-dropdown-item>
+              <b-dropdown-divider></b-dropdown-divider>
+              <b-dropdown-item>Something else here...</b-dropdown-item>
+              <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+            </b-dropdown>
+              """
+  'bDropdownItem':
+    'prefix': 'b-dropdown-item'
+    'body': """
+             <b-dropdown-item href="#">Action</b-dropdown-item>
+            """
+  'bDropdownItemButton':
+    'prefix': 'b-dropdown-item-button'
+    'body': """
+                <b-dropdown-item-button>I don't look like a button, but I am!</b-dropdown-item-button>
+            """
+  'bDropdownDivider':
+    'prefix': 'b-dropdown-divider'
+    'body': """
+                <b-dropdown-divider></b-dropdown-divider>
+            """
+  'bDropdownHeader':
+    'prefix': 'b-dropdown-header'
+    'body': """
+                <b-dropdown-header>This is a heading</b-dropdown-header>
+            """
+  'bDropdownSelect':
+    'prefix': 'b-dropdown-select'
+    'body': """
+            <b-dropdown-select :list="items">
+            </b-dropdown-select>
+            """
+  'bForm':
+    'prefix': 'b-from'
+    'body': """
+            <b-form>
+            </b-form>
+            """
+  'bFormCheckbox':
+    'prefix': 'b-form-checkbox'
+    'body': """
+             <b-form-checkbox v-model="state" value="accepted" unchecked-value="not_accepted">
+              I accept terms and use
+            </b-form-checkbox>
+            """
+  'bFormFieldset':
+    'prefix': 'b-form-fieldset'
+    'body': """
+                <b-form-fieldset
+                description="Let us know your full name."
+                label="Enter your name"
+                :feedback="feedback"
+                :state="state"
+                :label-cols="3"
+            >
+              <b-form-input v-model="name"></b-form-input>
+            </b-form-fieldset>
+              """
+  'bFormFile':
+    'prefix': 'b-form-file'
+    'body': """
+             <b-form-file v-model="file2" choose-label="Attachment2"></b-form-file>
+            """
+  'bFormRadio':
+    'prefix': 'b-form-radio'
+    'body': """
+                <b-form-radio v-model="selected" :options="options"></b-form-radio>
+            """
+  'bFormInput':
+    'prefix': 'b-form-input'
+    'body': """
+             <b-form-input v-model="text"
+                          type="text"
+                          placeholder="Enter your name"
+                          :state="text.length?'success':'warning'"
+                          :formatter="format"
+            ></b-form-input>
+            """
+  'bFormInputStatic':
+    'prefix': 'b-form-input-static'
+    'body': """
+            <b-form-input-static v-model="text"
+                         type="text"
+                         placeholder="Enter your name"
+                         :state="text.length?'success':'warning'"
+                         :formatter="format">
+            </b-form-input-static>
+            """
+  'bFormSelect':
+    'prefix': 'b-form-select'
+    'body': """
+            <b-form-select v-model="selected" :options="options" class="mb-3">
+            </b-form-select>
+            """
+  'bJumbotron':
+    'prefix': 'b-jumbotron'
+    'body': """
+                <b-jumbotron header="BootstrapVue" lead="Bootstrap 4 Components for Vue.js 2" >
+              <p>For more information visit website</p>
+              <b-btn variant="primary" href="#">Docs</b-btn>
+            </b-jumbotron>
+                """
+  'bBadge':
+    'prefix': 'b-badge'
+    'body': """
+               <b-badge pill variant="success">New</b-badge>
+            """
+  'bMedia':
+    'prefix': 'b-media'
+    'body': """
+               <b-media>
+              <img slot="aside" src="https://placeholdit.imgix.net/~text?txt=64x64&w=64&h=64">
+              <h5 class="mt-0">Media Title</h5>
+              <p>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis
+                in faucibus.
+              </p>
+              <p class="mb-0">
+                Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              </p>
+              <b-media>
+                <img slot="aside" src="https://placeholdit.imgix.net/~text?txt=64x64&w=64&h=64">
+                <h5 class="mt-0">Nested Media</h5>
+                Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </b-media>
+            </b-media>
+              """
+  'bModal':
+    'prefix': 'b-modal'
+    'body': """
+                <b-btn v-b-modal.modal1>Launch demo modal</b-btn>
+               <!-- Modal Component -->
+            <b-modal id="modal1" title="Submit your name" @ok="submit" @shown="clearName">
+              <form @submit.stop.prevent="submit">
+                <b-form-input type="text" placeholder="Enter your name" v-model="name"></b-form-input>
+              </form>
+            </b-modal>
+              """
+  'bNavbar':
+    'prefix': 'b-navbar'
+    'body': """
+                <b-navbar toggleable type="inverse" variant="success">
+
+                <b-nav-toggle target="nav_collapse"></b-nav-toggle>
+
+                <b-link class="navbar-brand" to="#">
+                  <span>BootstrapVue</span>
+                </b-link>
+
+                <b-collapse is-nav id="nav_collapse">
+
+                  <b-nav is-nav-bar>
+                    <b-nav-item>Support</b-nav-item>
+                    <b-nav-item>Docs</b-nav-item>
+                    <b-nav-item>Contact Us</b-nav-item>
+                  </b-nav>
+
+                  <b-nav is-nav-bar class="ml-auto">
+
+                    <!-- Navbar dropdowns -->
+                    <b-nav-item-dropdown text="Lang" right>
+                      <b-dropdown-item to="#">EN</b-dropdown-item>
+                      <b-dropdown-item to="#">ES</b-dropdown-item>
+                      <b-dropdown-item to="#">RU</b-dropdown-item>
+                      <b-dropdown-item to="#">FA</b-dropdown-item>
+                    </b-nav-item-dropdown>
+
+                    <b-nav-item-dropdown right>
+
+                      <!-- Using button-content slot -->
+                      <template slot="button-content">
+                        <span style="font-weight: bold;">User</span>
+                      </template>
+
+                      <b-dropdown-item to="#">Profile</b-dropdown-item>
+                      <b-dropdown-item to="#">Signout</b-dropdown-item>
+                    </b-nav-item-dropdown>
+
+                  </b-nav>
+                </b-collapse>
+            </b-navbar>
+                """
+  'bNavText':
+    'prefix': 'b-nav-text'
+    'body': """
+            <b-nav-text>
+            </b-nav-text>
+            """
+  'bNavForm':
+    'prefix': 'b-nav-form'
+    'body': """
+            <b-nav-form>
+            </b-nav-form>
+            """
+  'bPagination':
+    'prefix': 'b-pagination'
+    'body': """
+             <b-pagination size="md" :total-rows="100" v-model="currentPage" :per-page="10">
+            </b-pagination>
+            """
+  'bPopover':
+    'prefix': 'b-popover'
+    'body': """
+             <b-popover placement="left" content="Heya!">
+                <b-btn variant="primary">{{ placement }}</b-btn>
+              </b-popover>
+            """
+  'bProgress':
+    'prefix': 'b-progress'
+    'body': """
+            <b-progress v-model="counter" :precision="1" show-progress animated></b-progress>
+            """
+  'bTable':
+    'prefix': 'b-table'
+    'body': """
+              <b-table striped hover
+                     :items="items"
+                     :fields="fields"
+                     :current-page="currentPage"
+                     :per-page="perPage"
+                     :filter="filter"
+            >
+              <template slot="name" scope="item">
+                {{item.value.first}} {{item.value.last}}
+              </template>
+              <template slot="isActive" scope="item">
+                {{item.value?'Yes :)':'No :('}}
+              </template>
+              <template slot="actions" scope="item">
+                <b-btn size="sm" @click="details(item.item)">Details</b-btn>
+              </template>
+            </b-table>
+              """
+  'bTooltip':
+    'prefix': 'b-tooltip'
+    'body': """
+               <b-tooltip content="Online!">
+              <b-btn variant="outline-success">Live chat</b-btn>
+            </b-tooltip>
+              """
+  'bTab':
+    'prefix': 'b-tab'
+    'body': """
+            <b-tab title="Edit profile">
+              I'm the second tab
+              <b-card>I'm the card in tab</b-card>
+            </b-tab>
+            """
+  'bTabs':
+    'prefix': 'b-tabs'
+    'body': """
+            <b-tabs small card ref="tabs" v-model="tabIndex">
+              <b-tab title="General">
+                I'm the first fading tab
+              </b-tab>
+              <b-tab title="Edit profile">
+                I'm the second tab
+                <b-card>I'm the card in tab</b-card>
+              </b-tab>
+              <b-tab title="Premium Plan" disabled>
+                Sibzamini!
+              </b-tab>
+            </b-tabs>
+            """
+  'bNav':
+    'prefix': 'b-nav'
+    'body': """
+              <b-nav>
+              <b-nav-item active>Active</b-nav-item>
+              <b-nav-item>Link</b-nav-item>
+              <b-nav-item>Another Link</b-nav-item>
+              <b-nav-item disabled>Disabled</b-nav-item>
+            </b-nav>
+              """
+  'bNavItem':
+    'prefix': 'b-nav-item'
+    'body': """
+                <b-nav-item>Link</b-nav-item>
+            """
+  'bNavItemDropdown':
+    'prefix': 'b-nav-item-dropdown'
+    'body': """
+            <b-nav-item-dropdown text="Lang" right>
+                     <b-dropdown-item to="#">EN</b-dropdown-item>
+                     <b-dropdown-item to="#">ES</b-dropdown-item>
+                     <b-dropdown-item to="#">RU</b-dropdown-item>
+                     <b-dropdown-item to="#">FA</b-dropdown-item>
+                   </b-nav-item-dropdown>
+               """
+  'bNavToggle':
+    'prefix': 'b-nav-toggle'
+    'body': """
+                <b-nav-toggle target="nav_collapse"></b-nav-toggle>
+            """
+  'bListGroupItem':
+    'prefix': 'b-list-group-item'
+    'body': """
+            <b-list-group-item active>
+              Awesome list
+            </b-list-group-item>
+            """
+  'bListGroup':
+    'prefix': 'b-list-group'
+    'body': """
+                <b-list-group>
+              <b-list-group-item active>
+                Awesome list
+              </b-list-group-item>
+              <b-list-group-item to="#">
+                Action links are easy
+              </b-list-group-item>
+              <b-list-group-item>
+                This is a text only item
+              </b-list-group-item>
+            </b-list-group>
+                """
+  'bCarouselSlide':
+    'prefix': 'b-carousel-slide'
+    'body': """
+              <!-- Text slides -->
+              <b-carousel-slide height="300px" caption="First slide" text="Nulla vitae elit libero, a pharetra augue mollis interdum." img="http://placeskull.com/600/300/ABABAB/-1/0">
+              </b-carousel-slide>
+
+              <!-- Slides with custom text -->
+              <b-carousel-slide height="300px" img="http://placeskull.com/600/300/1C90F3/-1/0">
+                Hello world
+              </b-carousel-slide>
+
+              <!-- Slides with image -->
+              <b-carousel-slide height="300px" img="http://placeskull.com/600/300/f44336/-1/0">
+              </b-carousel-slide>
+            """
+  'bCarousel':
+    'prefix': 'b-carousel'
+    'body': """
+                <b-carousel controls indicators :interval="3000" background="#ABABAB" height="300px">
+
+              <!-- Text slides -->
+              <b-carousel-slide height="300px" caption="First slide" text="Nulla vitae elit libero, a pharetra augue mollis interdum." img="http://placeskull.com/600/300/ABABAB/-1/0">
+              </b-carousel-slide>
+
+              <!-- Slides with custom text -->
+              <b-carousel-slide height="300px" img="http://placeskull.com/600/300/1C90F3/-1/0">
+                Hello world
+              </b-carousel-slide>
+
+              <!-- Slides with image -->
+              <b-carousel-slide height="300px" img="http://placeskull.com/600/300/f44336/-1/0">
+              </b-carousel-slide>
+
+            </b-carousel>
+                """
+  'bCollapse':
+    'prefix': 'b-collapse'
+    'body': """
+            <b-collapse is-nav id="nav_collapse">
+
+              <b-nav is-nav-bar>
+                <b-nav-item>Support</b-nav-item>
+                <b-nav-item>Docs</b-nav-item>
+                <b-nav-item>Contact Us</b-nav-item>
+              </b-nav>
+
+              <b-nav is-nav-bar class="ml-auto">
+
+                <!-- Navbar dropdowns -->
+                <b-nav-item-dropdown text="Lang" right>
+                  <b-dropdown-item to="#">EN</b-dropdown-item>
+                  <b-dropdown-item to="#">ES</b-dropdown-item>
+                  <b-dropdown-item to="#">RU</b-dropdown-item>
+                  <b-dropdown-item to="#">FA</b-dropdown-item>
+                </b-nav-item-dropdown>
+
+                <b-nav-item-dropdown right>
+
+                  <!-- Using button-content slot -->
+                  <template slot="button-content">
+                    <span style="font-weight: bold;">User</span>
+                  </template>
+
+                  <b-dropdown-item to="#">Profile</b-dropdown-item>
+                  <b-dropdown-item to="#">Signout</b-dropdown-item>
+                </b-nav-item-dropdown>
+
+              </b-nav>
+            </b-collapse>
+            """
+  'bLink':
+    'prefix': 'b-link'
+    'body': """
+            <b-link>
+            </b-link>
+            """
