@@ -1,4 +1,4 @@
-'.text.html.vue':
+'.text.html.vue,.html':
   'bAlert':
     'prefix': 'b-alert'
     'body': """
