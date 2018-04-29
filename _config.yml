@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 deploy:
-type: git
-repository: ssh://github.com/zhuzhuppx/bootstrap-vue-snippets.git
-branch: master
+  type: git
+  repository: ssh://github.com/zhuzhuppx/bootstrap-vue-snippets.git
+  branch: master
